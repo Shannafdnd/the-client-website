@@ -28,10 +28,12 @@ h1 {
 }
 
 .profielen {
-
+    text-align: center;
 }
 
 ul {    
+    display: inline-block;
+    text-align: left;
     list-style: none;
 }
 
@@ -43,6 +45,11 @@ li {
     background-color: #F6F5FF;
 }
 
-a {
+li img {
+    max-width: 10em;
+    border-radius: 10em;
+}
+
+li a {
     text-decoration: none;
 }
