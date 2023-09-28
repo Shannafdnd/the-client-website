@@ -92,7 +92,7 @@ body.dark{
     list-style: none;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .sidebar header .image,
