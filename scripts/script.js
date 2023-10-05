@@ -37,10 +37,20 @@ fetch("/scripts/placeholder.json").then((res) => {res.json().then((members) => {
         // Add the data to the clone
         clone.querySelector(".member-account-type").innerText = member.accountType;
         clone.querySelector(".member-account-name").innerText = member.name;
-        const fineString = ((member.unpaidFine / 100).toFixed(2)).replace(".", ",");
-        clone.querySelector(".member-unpaid-fine").innerText = `Openstaande boete: €${fineString}`;
+        if (member.unpaidFine > 0) {
+            const fineString = ((member.unpaidFine / 100).toFixed(2)).replace(".", ",");
+            clone.querySelector(".member-unpaid-fine").innerText = `Openstaande boete: €${fineString}`;
+        } else {
+            clone.querySelector(".member-unpaid-fine").remove();
+        }
         clone.querySelector(".member-borrowed-articles").innerText = `Geleende artikelen: ${member.borrowedArticles}`;
         clone.querySelector(".member-next-turn-in-date").innerText = `Eerstvolgende inleverdatum: ${member.nextTurnInDate}`;
+        if (member.picture) {
+            clone.querySelector(".member-profile-picture").src = member.picture;
+            clone.querySelector(".member-profile-picture").alt = member.name;
+        } else {
+            clone.querySelector(".member-profile-picture").remove();
+        }
 
         membersContainer.insertBefore(clone, addMember);
     });

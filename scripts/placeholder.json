@@ -1,6 +1,7 @@
 [
     {
         "name": "Amber v/d reijden",
+        "picture": "/image/AmberFoto.jpeg",
         "accountType": "beheerder",
         "unpaidFine": 500,
         "borrowedArticles": 6,
@@ -9,28 +10,28 @@
     {
         "name": "Gert v/d reijden",
         "accountType": "lid",
-        "unpaidFine": 500,
+        "unpaidFine": 0,
         "borrowedArticles": 6,
         "nextTurnInDate": "06-12-2023"
     },
     {
         "name": "Kind1",
         "accountType": "lid",
-        "unpaidFine": 500,
+        "unpaidFine": 0,
         "borrowedArticles": 6,
         "nextTurnInDate": "06-12-2023"
     },
     {
         "name": "Kind2",
         "accountType": "lid",
-        "unpaidFine": 500,
+        "unpaidFine": 0,
         "borrowedArticles": 6,
         "nextTurnInDate": "06-12-2023"
     },
     {
         "name": "Kind3",
         "accountType": "lid",
-        "unpaidFine": 500,
+        "unpaidFine": 200,
         "borrowedArticles": 6,
         "nextTurnInDate": "06-12-2023"
     }
