@@ -352,3 +352,8 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
+
+#menu {
+    height: 30px;
+    width: 30px;
+}
