@@ -5,8 +5,34 @@
         "picture": "../image/AmberFoto.jpeg",
         "accountType": "beheerder",
         "unpaidFine": 500,
-        "borrowedArticles": 6,
-        "nextTurnInDate": "06-12-2023"
+        "borrowedArticles": 4,
+        "nextTurnInDate": "06-12-2023",
+        "currentlyBorrowed": [
+            {
+                "name": "The Art City",
+                "image": "book-1.png",
+                "turnInDate": "06-12-2023",
+                "fine": 0
+            },
+            {
+                "name": "Give",
+                "image": "book-2.png",
+                "turnInDate": "06-12-2023",
+                "fine": 250
+            },
+            {
+                "name": "Your Name",
+                "image": "book-3.png",
+                "turnInDate": "06-12-2023",
+                "fine": 0
+            },
+            {
+                "name": "Your title goes here",
+                "image": "book-4.png",
+                "turnInDate": "06-12-2023",
+                "fine": 250
+            }
+        ]
     },
     {
         "firstName": "Gert",

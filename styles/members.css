@@ -14,14 +14,17 @@
     background-color: white;
     width: 300px;
     min-height: 200px;
+    border-radius: 50px;
 }
 
 .member-profile {
     display: flex;
-    background: #c5c5c5;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
 }
 
-.member-profile-picture-container {
+.member-profile-picture {
     width: 80px;
     height: 80px;
     background-color: white;
@@ -30,13 +33,21 @@
     margin: 10px;
 }
 
-.member-profile-picture {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 .member-account-name {
     margin: 0;
+}
+
+.member-view {
+    height: fit-content;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.member-view:hover {
+    background-color: rgb(74, 74, 74);
 }
 
 .member-notifications {
