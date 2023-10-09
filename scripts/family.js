@@ -3,7 +3,7 @@ function capitalize(input) {
 }
 
 // Template copying
-fetch("/scripts/placeholder.json").then((res) => {res.json().then((members) => {
+fetch("../scripts/placeholder.json").then((res) => {res.json().then((members) => {
     //console.log(members);
     const membersContainer = document.getElementById("members");
     const addMember = membersContainer.firstChild;
