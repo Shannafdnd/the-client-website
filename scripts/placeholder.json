@@ -2,7 +2,7 @@
     {
         "firstName": "Amber",
         "lastName": "van der Reijden",
-        "picture": "/image/AmberFoto.jpeg",
+        "picture": "../image/AmberFoto.jpeg",
         "accountType": "beheerder",
         "unpaidFine": 500,
         "borrowedArticles": 6,

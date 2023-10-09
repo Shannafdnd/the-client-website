@@ -26,7 +26,7 @@ fetch("../scripts/placeholder.json").then((res) => {res.json().then((members) =>
             clone.querySelector(".member-profile-picture").src = member.picture;
             clone.querySelector(".member-profile-picture").alt = member.firstName;
         } else {
-            clone.querySelector(".member-profile-picture").src = "/image/profile-user-svgrepo-com.svg"
+            clone.querySelector(".member-profile-picture").src = "../image/profile-user-svgrepo-com.svg"
             clone.querySelector(".member-profile-picture").alt = "default profile picture";
         }
 
