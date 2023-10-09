@@ -7,6 +7,7 @@
     
     <!-- Link to CSS -->
     <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/members.css">
     <link rel="stylesheet" href="/styles/media.css">
     
     <!-- Link to boxicons -->
@@ -14,6 +15,7 @@
 
     <!-- Link to JavaScript script -->
     <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/family.js" defer></script>
     
     <title>mijn.oba</title> 
 </head>
@@ -58,7 +60,7 @@
                     </li>
 
                     <li class="nav-link">
-                        <a href="/familie">
+                        <a href="/">
                             <i class='bx bx-heart icon'></i>
                             <span class="text nav-text">Familieleden</span>
                         </a>
@@ -136,8 +138,46 @@
 
     <main class="home">
         <header class="banner-and-logo">
+            <img class="banner" src="/image/books.jpeg" alt="banner">
             <img class="logo" src="/image/oba_20.png" alt="OBA logo">
         </header>
+
+        <h1>Welkom, familie <span id="family-name"></span></h1>
+        
+        <h2>Leden</h2>
+        <ul id="members">
+            <!--This is where the template copies are-->
+            <li class="member add-member">
+                <div class="circle">+</div>
+                <p>Koppel account</p>
+            </li>
+        </ul>
+
     </main>
+
+    <template id="member-template">
+        <!-- This is the template that goes into the ul-->
+        <li class="member">
+            <div class="member-profile">
+                <div class="member-profile-picture-container">
+                    <img class="member-profile-picture">
+                </div>
+                <div>
+                    <p class="member-account-type"></p>
+                    <h2 class="member-account-name"></h2>
+                </div>
+            </div>
+            <div class="member-notifications">
+                <ul>
+                    <li class="member-unpaid-fine">
+                    </li>
+                    <li class="member-borrowed-articles">
+                    </li>
+                    <li class="member-next-turn-in-date">
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </template>
 </body>
 </html>

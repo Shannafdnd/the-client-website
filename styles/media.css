@@ -2,10 +2,14 @@
     .sidebar.close {
         display: none;
     }
-}
+    
+    .sidebar ~ main.home {
+        left: 30px;
+        width: calc(100vw - 30px);
+    }
 
-@media screen and (max-width: 700px) {
-    .home {
-        left: 0;
+    .banner-and-logo .logo {
+        right: 0;
+        left: unset;
     }
 }

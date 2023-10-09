@@ -1,3 +1,7 @@
+#family-name {
+    color: red;
+}
+
 #members {
     list-style-type: none;
     display: flex;
@@ -8,19 +12,19 @@
 
 .member {
     background-color: white;
-    box-shadow: 4px 4px;
-    width: 350px;
-    min-height: 260px;
+    width: 300px;
+    min-height: 200px;
 }
 
 .member-profile {
     display: flex;
+    background: #c5c5c5;
 }
 
 .member-profile-picture-container {
-    width: 100px;
-    height: 100px;
-    background-color: lightgrey;
+    width: 80px;
+    height: 80px;
+    background-color: white;
     border-radius: 50px;
     overflow: hidden;
     margin: 10px;
@@ -31,6 +35,18 @@
     max-height: 100%;
 }
 
+.member-account-name {
+    margin: 0;
+}
+
+.member-notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    padding-right: 30px;
+}
+
 .member-unpaid-fine {
     color: red;
 }
@@ -38,6 +54,7 @@
 .add-member {
     background-color: lightgray;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
