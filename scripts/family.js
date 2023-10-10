@@ -22,8 +22,18 @@ fetch("../scripts/placeholder.json").then((res) => {res.json().then((members) =>
         } else {
             clone.querySelector(".member-unpaid-fine").remove();
         }
-        clone.querySelector(".member-borrowed-articles").innerText = `Geleende artikelen: ${member.borrowedArticles}`;
-        clone.querySelector(".member-next-turn-in-date").innerText = `Eerstvolgende inleverdatum: ${member.nextTurnInDate}`;
+        
+        if (member.borrowedArticles) {
+            clone.querySelector(".member-borrowed-articles").innerText = `Geleende arikelen: ${member.borrowedArticles}`;
+        } else {
+            clone.querySelector(".member-borrowed-articles").remove();
+        }
+        
+        if (member.nextTurnInDate) {
+            clone.querySelector(".member-next-turn-in-date").innerText = `Eerstvolgende inleverdatum: ${member.nextTurnInDate}`;
+        } else {
+            clone.querySelector(".member-next-turn-in-date").innerText="Geen artikelen";
+        }
         
         if (member.picture) {
             clone.querySelector(".member-profile-picture").src = member.picture;

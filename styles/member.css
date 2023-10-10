@@ -1,3 +1,18 @@
 .book-image {
     max-height: 200px;
 }
+
+#currently-borrowed {
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+}
+
+#currently-borrowed li {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#member-name {
+    color: red;
+}

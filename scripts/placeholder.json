@@ -18,7 +18,7 @@
                 "name": "Give",
                 "image": "book-2.png",
                 "turnInDate": "06-12-2023",
-                "fine": 250
+                "fine": 0
             },
             {
                 "name": "Your Name",
@@ -30,7 +30,7 @@
                 "name": "Your title goes here",
                 "image": "book-4.png",
                 "turnInDate": "06-12-2023",
-                "fine": 250
+                "fine": 0
             }
         ]
     },
@@ -55,8 +55,7 @@
         "lastName": "van der Reijden",
         "accountType": "lid",
         "unpaidFine": 0,
-        "borrowedArticles": 6,
-        "nextTurnInDate": "06-12-2023"
+        "borrowedArticles": 0
     },
     {
         "firstName": "Kind3",

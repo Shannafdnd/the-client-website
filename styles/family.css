@@ -44,6 +44,8 @@
     color: white;
     cursor: pointer;
     text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .member-view:hover {
