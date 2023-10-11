@@ -16,14 +16,19 @@ fetch("../scripts/placeholder.json").then((res) => {res.json().then((members) =>
         // Add the data to the clone
         clone.querySelector(".member-account-type").innerText = member.accountType;
         clone.querySelector(".member-account-name").innerText = member.firstName;
-        if (member.unpaidFine > 0) {
-            clone.querySelector(".member-unpaid-fine").innerText = `Openstaande boete: €${centsToEuros(member.unpaidFine)}`;
+
+        console.log(member);
+        const unpaidFine = member.currentlyBorrowed.reduce((result, book) => result + book.fine, 0);
+        console.log(unpaidFine);
+        if (unpaidFine > 0) {
+            clone.querySelector(".member-unpaid-fine").innerText = `Openstaande boete: €${centsToEuros(unpaidFine)}`;
         } else {
             clone.querySelector(".member-unpaid-fine").remove();
         }
         
-        if (member.borrowedArticles) {
-            clone.querySelector(".member-borrowed-articles").innerText = `Geleende arikelen: ${member.borrowedArticles}`;
+        const borrowedArticles = member.currentlyBorrowed.length;
+        if (borrowedArticles) {
+            clone.querySelector(".member-borrowed-articles").innerText = `Geleende arikelen: ${borrowedArticles}`;
         } else {
             clone.querySelector(".member-borrowed-articles").remove();
         }

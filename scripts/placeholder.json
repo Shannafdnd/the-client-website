@@ -4,10 +4,7 @@
         "lastName": "van der Reijden",
         "picture": "../image/AmberFoto.jpeg",
         "accountType": "beheerder",
-        "unpaidFine": 500,
-        "borrowedArticles": 4,
         "nextTurnInDate": "06-12-2023",
-
         "currentlyBorrowed": [
             {
                 "name": "The Art City",
@@ -92,31 +89,24 @@
         "firstName": "Gert",
         "lastName": "van der Reijden",
         "accountType": "lid",
-        "unpaidFine": 0,
-        "borrowedArticles": 6,
-        "nextTurnInDate": "06-12-2023"
+        "currentlyBorrowed": []
     },
     {
         "firstName": "Kind1",
         "lastName": "van der Reijden",
         "accountType": "lid",
-        "unpaidFine": 0,
-        "borrowedArticles": 6,
-        "nextTurnInDate": "06-12-2023"
+        "currentlyBorrowed": []
     },
     {
         "firstName": "Kind2",
         "lastName": "van der Reijden",
         "accountType": "lid",
-        "unpaidFine": 0,
-        "borrowedArticles": 0
+        "currentlyBorrowed": []
     },
     {
         "firstName": "Kind3",
         "lastName": "van der Reijden",
         "accountType": "lid",
-        "unpaidFine": 200,
-        "borrowedArticles": 6,
-        "nextTurnInDate": "06-12-2023"
+        "currentlyBorrowed": []
     }
 ]
