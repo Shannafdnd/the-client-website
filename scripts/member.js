@@ -5,15 +5,11 @@ function centsToEuros(cents) {
 const URLParams = new URLSearchParams(window.location.search);
 
 function scrollX(toScroll, dx) {
-    console.log("scrolling", document.getElementById(toScroll), "by", dx);
     document.getElementById(toScroll).scrollBy(dx, 0);
 }
 
 fetch("../../scripts/placeholder.json").then((res) => {res.json().then((members) => {
-    console.log(members);
-    console.log(URLParams.get("lid") ?? 0);
     const member = members[URLParams.get("lid") ?? 0];
-    console.log(member);
     document.getElementById("member-name").innerText = member.firstName + " " + member.lastName;
 
     const currentlyBorrowedTempalate = document.getElementById("currently-borrowed-template");
@@ -25,7 +21,6 @@ fetch("../../scripts/placeholder.json").then((res) => {res.json().then((members)
         clone.querySelector(".book-image").src = `../../image/books/${book.image}`;
         clone.querySelector(".book-image").alt = book.name;
         
-        console.log(book.fine)
         if (book.fine > 0) {
             clone.querySelector(".fine").innerText = "€" + centsToEuros(book.fine);
         } else {
