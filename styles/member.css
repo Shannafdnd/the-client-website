@@ -55,11 +55,7 @@
 }
 
 .banner-and-logo .banner {
-height: 200px;
-}
-
-.banner-and-logo {
-    height: 280px;
+    height: 200px;
 }
 
 @media screen and (max-width: 500px) {
