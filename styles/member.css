@@ -1,26 +1,51 @@
 .book-image {
     max-height: 200px;
+    scale: 1;
+    transition: 0.2s all;
+    cursor: pointer;
 }
 
-#currently-borrowed {
+.book-image:hover {
+    scale: 1.1;
+}
+
+.book-list {
+    --book-width: 200px;
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.book-list ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     display: flex;
     overflow-x: auto;
-    gap: 1em;
-    background-color: rgb(190, 190, 190);
+    overscroll-behavior-x: contain;
+    overflow-y: hidden;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
-#favorites {
-    display: flex;
-    overflow-x: auto;
-    gap: 1em;
-    background-color: rgb(190, 190, 190);
-}
-
-#currently-borrowed li {
-    display: flex;
-    flex-direction: column-reverse;
+.book-list li {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: var(--book-width);
 }
 
 #member-name {
     color: red;
+}
+
+.scroll-button {
+    background-color: black;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    width: 30px;
 }

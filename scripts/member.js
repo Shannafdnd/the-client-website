@@ -4,6 +4,11 @@ function centsToEuros(cents) {
 
 const URLParams = new URLSearchParams(window.location.search);
 
+function scrollX(toScroll, dx) {
+    console.log("scrolling", document.getElementById(toScroll), "by", dx);
+    document.getElementById(toScroll).scrollBy(dx, 0);
+}
+
 fetch("../../scripts/placeholder.json").then((res) => {res.json().then((members) => {
     console.log(members);
     console.log(URLParams.get("lid") ?? 0);
@@ -25,6 +30,7 @@ fetch("../../scripts/placeholder.json").then((res) => {res.json().then((members)
         } else {
             clone.querySelector(".fine").parentElement.remove();
         }
+        
         currentlyBorrowed.appendChild(clone);
     });
 
@@ -36,12 +42,6 @@ fetch("../../scripts/placeholder.json").then((res) => {res.json().then((members)
         clone.querySelector(".book-image").src = `../../image/books/${book.image}`;
         clone.querySelector(".book-image").alt = book.name;
 
-        if (book.fine > 0) {
-        clone.querySelector(".fine").innerText = "€" + centsToEuros(book.fine);
-        } else {
-            clone.querySelector(".fine").parentElement.remove();
-        }
         favorites.appendChild(clone);
-
     });
-})})
+})});

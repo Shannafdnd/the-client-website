@@ -143,27 +143,34 @@
         <h1>Profiel van <span id="member-name"></span></h1>
 
         <h2>Openstaande leningen</h2>
-        <ul id="currently-borrowed">
-            <template id="currently-borrowed-template">
-                <li>
-                    <p class="book-name"></p>
-                    <p>Inleverdatum: <span class="turn-in-date"></span></p>
-                    <p>Boete: <span class="fine"></span></p>
-                    <img class="book-image">
-                </li>
-            </template>
-        </ul>
+        <div class="book-list">
+            <button class="scroll-button" onclick="scrollX('currently-borrowed', -200)">&lt</button>
+            <ul id="currently-borrowed">
+                <template id="currently-borrowed-template">
+                    <li>
+                        <p class="book-name"></p>
+                        <img class="book-image">
+                        <p>Inleverdatum: <span class="turn-in-date"></span></p>
+                        <p>Boete: <span class="fine"></span></p>
+                    </li>
+                </template>
+            </ul>
+            <button class="scroll-button" onclick="scrollX('currently-borrowed', 200)">&gt</button>
+        </div>
 
         <h2>Favoriete boeken</h2>
-        <ul id="favorites">
-            <template id="favorites-template">
-                <li>
-                    <p class="book-name"></p>
-                    <p>Boete: <span class="fine"></span></p>
-                    <img class="book-image">
-                </li>
-            </template>
-        </ul>
+        <div class="book-list">
+            <button class="scroll-button" onclick="scrollX('favorites', -200)">&lt</button>
+            <ul id="favorites">
+                <template id="favorites-template">
+                    <li>
+                        <p class="book-name"></p>
+                        <img class="book-image">
+                    </li>
+                </template>
+            </ul>
+            <button class="scroll-button" onclick="scrollX('favorites', 200)">&gt</button>
+        </div>
 
         <h2>Leengeschiedenis</h2>
         <ul id="history"></ul>
