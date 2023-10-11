@@ -12,5 +12,8 @@
         right: 0;
         left: unset;
     }
+    
+    .banner-and-logo .banner {
+        display: none;
+    }
 }
-

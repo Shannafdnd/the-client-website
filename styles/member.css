@@ -43,9 +43,30 @@
 }
 
 .scroll-button {
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     color: white;
     height: 30px;
     border-radius: 5px;
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 30px;
+    padding: 0;
+    border: none;
+}
+
+.banner-and-logo .banner {
+height: 200px;
+}
+
+.banner-and-logo {
+    height: 280px;
+}
+
+@media screen and (max-width: 500px) {
+    .book-list {
+        justify-content: center;
+    }
+    .book-list ul {
+        width: 200px;
+    }
 }
