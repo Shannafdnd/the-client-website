@@ -38,6 +38,10 @@
     width: var(--book-width);
 }
 
+.fine {
+    color: red;
+}
+
 #member-name {
     color: red;
 }

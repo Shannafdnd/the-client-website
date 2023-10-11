@@ -25,7 +25,7 @@
                 "name": "Your Name",
                 "image": "book-3.png",
                 "turnInDate": "06-12-2023",
-                "fine": 0
+                "fine": 500
             },
             {
                 "name": "Your title goes here",
@@ -33,68 +33,58 @@
                 "turnInDate": "06-12-2023",
                 "fine": 0
             }
-        ]
-,
+        ],
         "favorites" : [
             {
                 "name": "The Art City",
                 "image": "book-1.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
+                "turnInDate": "06-12-2023"
             },
             {
                 "name": "Give",
                 "image": "book-2.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
+                "turnInDate": "06-12-2023"
             },
             {
                 "name": "Your Name",
                 "image": "book-3.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
+                "turnInDate": "06-12-2023"
             },
             {
                 "name": "Your title goes here",
                 "image": "book-4.png",
+                "turnInDate": "06-12-2023"
+            },
+            {
+                "name": "Music",
+                "image": "book-5.png",
+                "turnInDate": "06-12-2023"
+            },
+            {
+                "name": "Sample",
+                "image": "book-6.png",
+                "turnInDate": "06-12-2023"
+            },
+            {
+                "name": "Lighthouse",
+                "image": "book-7.png",
+                "turnInDate": "06-12-2023"
+            },
+            {
+                "name": "Black History Month",
+                "image": "book-8.png",
+                "turnInDate": "06-12-2023"
+            },
+            {
+                "name": "Love",
+                "image": "book-9.png",
                 "turnInDate": "06-12-2023",
                 "fine": 0
             },
             {
-                "name": "Give",
-                "image": "book-2.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
-            },
-            {
-                "name": "Your Name",
-                "image": "book-3.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
-            },
-            {
-                "name": "Your title goes here",
-                "image": "book-4.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
-            },
-            {
-                "name": "Give",
-                "image": "book-2.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
-            },
-            {
-                "name": "Your Name",
-                "image": "book-3.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
-            },
-            {
-                "name": "Your title goes here",
-                "image": "book-4.png",
-                "turnInDate": "06-12-2023",
-                "fine": 0
+                "name": "Retro",
+                "image": "book-10.png",
+                "turnInDate": "06-12-2023"
             }
         ]
     },

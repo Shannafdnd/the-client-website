@@ -25,8 +25,9 @@ fetch("../../scripts/placeholder.json").then((res) => {res.json().then((members)
         clone.querySelector(".book-image").src = `../../image/books/${book.image}`;
         clone.querySelector(".book-image").alt = book.name;
         
+        console.log(book.fine)
         if (book.fine > 0) {
-        clone.querySelector(".fine").innerText = "€" + centsToEuros(book.fine);
+            clone.querySelector(".fine").innerText = "€" + centsToEuros(book.fine);
         } else {
             clone.querySelector(".fine").parentElement.remove();
         }
