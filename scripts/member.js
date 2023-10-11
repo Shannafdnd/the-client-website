@@ -19,12 +19,29 @@ fetch("../../scripts/placeholder.json").then((res) => {res.json().then((members)
         clone.querySelector(".turn-in-date").innerText = book.turnInDate;
         clone.querySelector(".book-image").src = `../../image/books/${book.image}`;
         clone.querySelector(".book-image").alt = book.name;
-
+        
         if (book.fine > 0) {
         clone.querySelector(".fine").innerText = "€" + centsToEuros(book.fine);
         } else {
             clone.querySelector(".fine").parentElement.remove();
         }
         currentlyBorrowed.appendChild(clone);
+    });
+
+    const favoritesTempalate = document.getElementById("favorites-template");
+    const favorites = document.getElementById("favorites");
+    member.favorites.forEach((book) => {
+        const clone = favoritesTempalate.content.cloneNode(true);
+        clone.querySelector(".book-name").innerText = book.name;
+        clone.querySelector(".book-image").src = `../../image/books/${book.image}`;
+        clone.querySelector(".book-image").alt = book.name;
+
+        if (book.fine > 0) {
+        clone.querySelector(".fine").innerText = "€" + centsToEuros(book.fine);
+        } else {
+            clone.querySelector(".fine").parentElement.remove();
+        }
+        favorites.appendChild(clone);
+
     });
 })})
